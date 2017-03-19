@@ -25,3 +25,8 @@ _testmain.go
 
 *.log
 .vscode
+debug
+build
+
+cfg/config.json
+

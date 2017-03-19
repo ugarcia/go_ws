@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "http": {
+    "port": 8181,
+    "auth_cookie": "go_ws_ck",
+    "auth_token": "go_ws_tkn",
+    "auth_time": 24
+  },
+  "db": {
+    "type": "postgres",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "admin_user": "root",
+    "admin_password": "",
+    "database": "go_ws",
+    "user": "go_ws",
+    "password": ""
+  },
+  "smtp": {
+    "host": "smtp.gmail.com",
+    "port": 587,
+    "user": "dummy@gmail.com",
+    "password": "",
+    "senders": {
+      "admin": "dummy.admin@gmail.com",
+      "support": "dummy.support@gmail.com"
+    }
+  },
+  "crypto": {
+    "key": "123456781234567812345678",
+    "iv": "12345678"
+  },
+  "options": {
+    "users": {
+      "send_signup_verify_mail": false,
+      "signup_verify_url": "https://go_ws.mydomain.local:8181/user/verify/"
+    }
+  },
+  "assets": {
+    "local": {
+      "enabled": true,
+      "host": null,
+      "user": null,
+      "password": null,
+      "path": "/home/mydomain/assets/go_ws"
+    },
+    "remote": {
+      "s3": {
+        "access_key": null,
+        "bucket": null,
+        "prefix": null,
+        "secret_access_key": null,
+        "region": null
+      }
+    },
+    "cdn": {
+      "url": "https://assets.mydomain.local/go_ws"
+    }
+  }
+}
